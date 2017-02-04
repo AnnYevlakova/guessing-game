@@ -12,7 +12,7 @@ class GuessingGame {
         if(max-min == 1){
             return max;
         }
-        this.middle = Math.ceil((max+min)/2);
+        this.middle = Math.ceil((max + min)/2);
         this.min = min;
         this.max = max;
         return this.guess();
@@ -21,12 +21,6 @@ class GuessingGame {
 
     guess() {
         return this.middle;
-        /*var x = confirm(this.middle);
-        if(x == true) { 
-            return true;
-        } else { 
-           return this.lower();
-        }*/
     }
 
     lower() {
